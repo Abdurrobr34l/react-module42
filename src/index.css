@@ -11,3 +11,8 @@
 /** THIS FILE IS ROOT CSS USED IN MAIN.JSX */
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+.togglerIcon {
+  @apply w-6 h-6 transition duration-300 hover:text-accent hover:cursor-pointer;
+}

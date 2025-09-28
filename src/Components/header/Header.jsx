@@ -44,10 +44,10 @@ const Header = () => {
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
               >
                 {navigationData.map((route) => (
-                <li key={route.id}>
-                  <a href={route.path}>{route.name}</a>
-                </li>
-              ))}
+                  <li key={route.id}>
+                    <a href={route.path}>{route.name}</a>
+                  </li>
+                ))}
               </ul>
             </div>
             {/* Logo */}
@@ -72,7 +72,7 @@ const Header = () => {
         </div>
       </header>
 
-        <CustomHeader navigationData={navigationData}></CustomHeader>
+      <CustomHeader navigationData={navigationData}></CustomHeader>
     </>
   );
 };
