@@ -15,7 +15,7 @@
 
 /** HEADER START */
 .togglerIcon {
-  @apply w-6 h-6 transition duration-300 hover:text-accent hover:cursor-pointer;
+  @apply w-6 h-6 transition-colors duration-300 hover:text-accent cursor-pointer;
 }
 
 .togglerMenu {

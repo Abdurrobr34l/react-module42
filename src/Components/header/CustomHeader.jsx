@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+import { Menu, SquareMenu, X } from "lucide-react";
 import React, { useState } from "react";
 
 const CustomHeader = ({ navigationData }) => {
@@ -16,7 +16,7 @@ const CustomHeader = ({ navigationData }) => {
 
   return (
     <>
-      <header className="relative flex items-center justify-between py-5">
+      <div className="relative flex items-center justify-between py-5">
         {/* Logo */}
         <div>
           <h1 className="text-xl font-bold transition duration-300 hover:text-accent">
@@ -31,7 +31,7 @@ const CustomHeader = ({ navigationData }) => {
         >
           {/* Toggler Icon */}
           {toggler ? (
-            <Menu className="togglerIcon" />
+               <Menu className="togglerIcon" />
           ) : (
             <X className="togglerIcon" />
           )}
@@ -39,7 +39,7 @@ const CustomHeader = ({ navigationData }) => {
           {/* Dropdown Menu */}
           <ul
             className={`togglerMenu 
-            ${!toggler ? "opacity-100 top-16" : "opacity-0 -top-16"}`}
+            ${!toggler ? "opacity-100 top-16" : "opacity-0 -top-56"}`}
           >
             {menuLinks}
           </ul>
@@ -56,7 +56,7 @@ const CustomHeader = ({ navigationData }) => {
             Sign In
           </button>
         </div>
-      </header>
+      </div>
     </>
   );
 };

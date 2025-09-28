@@ -4,14 +4,24 @@ import { navigationData } from "./components/header/navigationData";
 // import Header from "./components/header/Header";
 import CustomHeader from "./components/header/CustomHeader";
 import PricingOpt from "./components/pricing/PricingOpt";
+import { Suspense } from "react";
+
+const pricingPromise = fetch("PricingData.json").then(response => response.json());
 
 function App() {
   return (
     <>
       <Container>
-        {/* <Header></Header> */}
-        <CustomHeader navigationData={navigationData}></CustomHeader>
-        <PricingOpt></PricingOpt>
+        <header>
+          {/* <Header></Header> */}
+          <CustomHeader navigationData={navigationData}></CustomHeader>
+        </header>
+
+        <main>
+          <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
+            <PricingOpt pricingPromise={pricingPromise}></PricingOpt>
+          </Suspense>
+        </main>
       </Container>
     </>
   );
