@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Basic",
+    "price": 1500,
+    "description": "Perfect for beginners starting their fitness journey",
+    "features": [
+      "Access to gym equipment",
+      "1 personal training session per month",
+      "Free fitness assessment",
+      "Locker room access",
+      "Access to cardio machines",
+      "Group stretching sessions",
+      "Towel service"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Standard",
+    "price": 3000,
+    "description": "Ideal for regular gym-goers who want more guidance",
+    "features": [
+      "All Basic features",
+      "3 personal training sessions per month",
+      "Access to group classes",
+      "Nutrition guidance",
+      "Access to strength training equipment",
+      "Sauna access",
+      "Monthly progress tracking"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Premium",
+    "price": 5000,
+    "description": "For enthusiasts looking for full support and flexibility",
+    "features": [
+      "All Standard features",
+      "Unlimited personal training sessions",
+      "Access to premium classes (yoga, HIIT, spin, etc.)",
+      "24/7 gym access",
+      "Priority support",
+      "Free gym merchandise",
+      "Monthly body composition analysis"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "VIP",
+    "price": 8000,
+    "description": "Ultimate plan with personal coaching & exclusive benefits",
+    "features": [
+      "All Premium features",
+      "Dedicated personal coach",
+      "Customized nutrition & workout plan",
+      "Private locker & shower",
+      "Exclusive VIP events",
+      "One-on-one lifestyle consultation",
+      "Priority booking for classes and trainers"
+    ]
+  }
+]

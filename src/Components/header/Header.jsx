@@ -71,8 +71,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-
-      <CustomHeader navigationData={navigationData}></CustomHeader>
     </>
   );
 };

@@ -25,24 +25,33 @@ const CustomHeader = ({ navigationData }) => {
         </div>
 
         {/* Dropdown Menu */}
-        <div onClick={() => SetToggler(!toggler)} className="md:block lg:hidden">
+        <div
+          onClick={() => SetToggler(!toggler)}
+          className="md:block lg:hidden"
+        >
+          {/* Toggler Icon */}
           {toggler ? (
             <Menu className="togglerIcon" />
           ) : (
             <X className="togglerIcon" />
           )}
 
-          <ul className={`absolute right-0 flex flex-col gap-5 p-5 bg-base-300 w-[200px] rounded-xl transition-all duration-500 ease-in-out
-          ${!toggler ? "opacity-100 top-16" : "opacity-0 -top-16"}`}>{menuLinks}</ul>
+          {/* Dropdown Menu */}
+          <ul
+            className={`togglerMenu 
+            ${!toggler ? "opacity-100 top-16" : "opacity-0 -top-16"}`}
+          >
+            {menuLinks}
+          </ul>
         </div>
 
         {/* Navigation Menu */}
-        <nav className="lg:block md:hidden">
+        <nav className="lg:block hidden">
           <ul className="flex items-center gap-5">{menuLinks}</ul>
         </nav>
 
         {/* Button */}
-        <div className="lg:block md:hidden">
+        <div className="lg:block hidden">
           <button className="btn btn-accent font-bold text-white">
             Sign In
           </button>
