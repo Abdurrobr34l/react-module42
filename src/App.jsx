@@ -1,13 +1,14 @@
 import "./App.css";
-import Container from "./Components/Container/Container";
+import Container from "./components/container/Container";
+import CustomHeader from "./components/header/CustomHeader";
+import Header from "./components/header/Header";
 
 function App() {
-
   return (
     <>
-    <Container>
-      <h1 className="text-5xl font-bold">Start Your Coding Here</h1>
-    </Container>
+      <Container>
+        <Header></Header>
+      </Container>
     </>
   );
 }
