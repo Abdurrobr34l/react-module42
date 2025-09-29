@@ -17,6 +17,7 @@ const resultData = [
 const ResultChart = () => {
   return (
     <>
+    <h1 className="title">ResultChart</h1>
       <div>
         <LineChart width={1100} height={500} data={resultData}>
         <XAxis dataKey={"name"}></XAxis>

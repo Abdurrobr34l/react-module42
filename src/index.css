@@ -12,6 +12,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+.title {
+  @apply mb-5 text-5xl font-semibold text-center text-accent underline;
+}
 
 /** HEADER START */
 .togglerIcon {
