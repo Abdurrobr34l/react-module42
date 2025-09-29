@@ -19,12 +19,15 @@ function App() {
   return (
     <>
       <Container>
+        {/* Header */}
         <header>
           {/* <Header></Header> */}
           <CustomHeader navigationData={navigationData}></CustomHeader>
         </header>
 
+        {/* Main */}
         <main>
+          {/* Pricing */}
           <Suspense
             fallback={
               <span className="loading loading-spinner loading-lg"></span>
@@ -32,9 +35,11 @@ function App() {
           >
             <PricingOpt pricingPromise={pricingPromise}></PricingOpt>
           </Suspense>
-          
+
+          {/* Result Chart */}
           <ResultChart></ResultChart>
 
+          {/* Marks Chart */}
           <Suspense
             fallback={
               <span className="loading loading-spinner loading-lg"></span>
