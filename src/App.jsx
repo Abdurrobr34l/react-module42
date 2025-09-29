@@ -5,6 +5,7 @@ import { navigationData } from "./components/header/navigationData";
 import CustomHeader from "./components/header/CustomHeader";
 import PricingOpt from "./components/pricing/PricingOpt";
 import { Suspense } from "react";
+import ResultChart from "./components/resultChart/ResultChart";
 
 const pricingPromise = fetch("PricingData.json").then(response => response.json());
 
@@ -21,6 +22,7 @@ function App() {
           <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
             <PricingOpt pricingPromise={pricingPromise}></PricingOpt>
           </Suspense>
+          <ResultChart></ResultChart>
         </main>
       </Container>
     </>
